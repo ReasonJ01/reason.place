@@ -1,20 +1,27 @@
 # reason.place
 
-Static landing page for `https://reason.place/`.
+Monorepo for `reason.place` and small `*.reason.place` microsites.
 
-It currently links to `https://recipes.reason.place/` and is intentionally simple so additional projects can be added later.
+The repository root is the home site for `https://reason.place/`. It currently links to `https://recipes.reason.place/` and is intentionally simple so more projects can be added later.
+
+## Structure
+
+- `/` — `reason.place` home
+- `sites/<name>/` — standalone microsites such as `scent.reason.place`
+
+`recipes.reason.place` remains in its own `ReasonJ01/Recipes` repository because it has its own build, content, and tests.
 
 ## Cloudflare Pages
 
-Create a Cloudflare Pages project from this repository.
+For the home site:
 
-Use:
-
+- Repository: `ReasonJ01/reason.place`
 - Production branch: `main`
 - Framework preset: None
 - Build command: leave blank
 - Build output directory: `.`
+- Custom domain: `reason.place`
 
-After the first deployment succeeds, add `reason.place` as the custom domain.
+For a microsite under `sites/<name>/`, create another Cloudflare Pages project from the same repository and use that directory as its build output directory. For example, `scent.reason.place` would publish from `sites/scent`.
 
-No build step or package installation is required.
+No shared build system is required unless the microsites grow enough to justify one.
