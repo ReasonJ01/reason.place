@@ -75,8 +75,7 @@ dt {
 .eyebrow { margin: 0 0 1rem; }
 
 h1,
-h2,
-blockquote {
+.intro {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
@@ -92,7 +91,6 @@ h1 {
   max-width: 42rem;
   margin: 1.75rem 0 0;
   color: var(--muted);
-  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(1.3rem, 2.5vw, 1.75rem);
   line-height: 1.4;
 }
@@ -136,10 +134,10 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: clamp(2.2rem, 4vw, 3.45rem);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
   font-weight: 600;
-  letter-spacing: -.025em;
-  line-height: .98;
+  letter-spacing: -.02em;
+  line-height: 1.05;
 }
 
 dl { margin: 0; }
@@ -163,19 +161,17 @@ dd {
 blockquote,
 .intent {
   margin: 1.6rem 0 1.25rem;
+  font-size: .98rem;
+  line-height: 1.55;
 }
 
 blockquote {
   color: var(--green);
-  font-size: 1.35rem;
-  font-style: italic;
-  line-height: 1.35;
+  font-style: normal;
 }
 
 .intent {
   color: var(--muted);
-  font-size: .98rem;
-  line-height: 1.55;
 }
 
 .verdict {
