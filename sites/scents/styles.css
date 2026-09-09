@@ -5,7 +5,7 @@
   --ink: #24241f;
   --muted: #6f6a60;
   --line: #c9c0b1;
-  --green: #455246;
+  --green: #315946;
   --wash: rgba(255, 255, 255, 0.28);
 }
 
@@ -99,7 +99,7 @@ h1 {
 .reference:focus-visible,
 .site-footer a:hover,
 .site-footer a:focus-visible {
-  color: var(--green);
+  color: var(--ink);
 }
 
 .collection {
@@ -186,7 +186,7 @@ blockquote {
 
 .reference {
   display: inline-block;
-  color: var(--muted);
+  color: var(--green);
   text-decoration: none;
 }
 
@@ -209,6 +209,7 @@ blockquote {
 
 .site-footer a {
   padding: .25rem 0;
+  color: var(--green);
   text-decoration: underline;
   text-underline-offset: .22em;
   text-decoration-thickness: 1px;
